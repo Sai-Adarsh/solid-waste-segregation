@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doggo Preditor</title>
+<style type="text/css">
+	.button
+	{
+		height: 40px;
+		width: 100px;
+		background-color: #6cb233;
+		
+	}
+	.bg
+	{
+		background: #3f3f3f;
+		background-repeat: none;
+		font-family: 'Arial';
+		color: white;
+	}
+	.column
+	{
+		max-height: 500px;
+		max-width: 800px;
+		height: 90%;
+		width: 97%;
+		background-color: #282828;
+		border-radius: 10px;
+		color: white;
+	}
+</style>
+</head>
+<body class="bg">
+
+</body>
+</html>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<div class="column">
+	<br><br><br><br><br><br>
+<center><form action="{% url 'index' %}" method="post" enctype="multipart/form-data">
+	 {% csrf_token %}
+	{{ form }}
+	<button class="button" type="submit"> Submit </button>
+</form></center>
+<center><h2>{{ result }}</h2></center>
+</div></center>
