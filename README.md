@@ -23,7 +23,7 @@
 ### Training & Testing
 
 How to train:
-Place your own thermal dataset in training_data and testing_data folders,
+Place your own dataset in training_data and testing_data folders,
 
 ```sh
 
@@ -35,14 +35,14 @@ Place your own thermal dataset in training_data and testing_data folders,
 ### How to run:  
 
 ```sh
-   $ git clone https://github.com/sai-adarsh/ThermalAI.git
+   $ git clone https://github.com/sai-adarsh/ImageClassifier.git
 
-   $ cd ThermalAI
+   $ cd ImageClassifier
 
    $ pip install -r requirements.txt
    ```
 ### Open and replace my project path with your respective path inside these files:
- * project\thermalai\predictor\predict.py
+ * project\catvsdog\predictor\predict.py
  * tutorial-2-image-classifier\predict.py
  * tutorial-2-image-classifier\train.py
 
@@ -56,7 +56,7 @@ Place your own thermal dataset in training_data and testing_data folders,
 
 ### To run the WebApp:
    ```sh
-   $ cd project\thermalai
+   $ cd project\catvsdog
 
    $ python manage.py runserver
    ```   
