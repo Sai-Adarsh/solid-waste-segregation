@@ -1,57 +1,50 @@
-# Solid Waste Segregation
+## Solid Waste Segregation
 
-## Install
+This competition was known to be possibly "The Biggest AI Hackathon in India in terms of the number of Participants" (as of August 2018). We made a Solid Waste Segregating Image Processing Model powered by Convolutional Neural Networks embedded with Raspberry Pi and its Add-ons. TensorFlow, OpenCV, Amazon Web Services, Django Framework, Google Firebase, and Raspberry Pi were the technologies we used for this model.
+
+## Getting Started
+### Run:  
+   ```bash
+   $ git clone https://github.com/Sai-Adarsh/solid-waste-segregation.git
+   
+   $ cd solid-waste-segregation
+   
+   $ pip install -r requirements.txt
+   ```
+### Open and replace the project path with the respective path inside the below mentioned files:
+   ```bash
+   project\catvsdog\predictor\predict.py
+
+   tutorial-2-image-classifier\predict.py
+
+   tutorial-2-image-classifier\train.py
+   ```
 
 ### Activate virtualenv
-
-[Click here](https://stackoverflow.com/questions/14604699/how-to-activate-virtualenv) to read about activating virtualenv.
-
-* #### For Linux
-```sh
-   $ source ./venv/bin/activate
-```
-* #### For windows
-```sh
-   $ cd venv/Scripts/
-```
-```sh
-   $ activate
-```   
-### Training & Testing
-
-How to train:
-Place your own dataset in training_data and testing_data folders,
-
-```sh
-
-   $ cd tutorial-2-image-classifier
-
+   ```bash
+      # Linux
+      $ source ./venv/bin/activate
+   
+      # Windows
+      $ cd venv/Scripts/
+   
+      $ activate
+   ```
+### Train/Test
+Place your thermal dataset in the training_data and testing_data folders.
+   ```bash
+   $ cd solid-waste-segregation
+   
    $ python train.py
    ```
 
-### How to run:  
+### Predict
+   ```bash
+   $ cd solid-waste-segregation
 
-```sh
-   $ git clone https://github.com/sai-adarsh/ImageClassifier.git
-
-   $ cd ImageClassifier
-
-   $ pip install -r requirements.txt
+   $ python predict.py sample.jpg (any extension works)
    ```
-### Open and replace my project path with your respective path inside these files:
- * project\catvsdog\predictor\predict.py
- * tutorial-2-image-classifier\predict.py
- * tutorial-2-image-classifier\train.py
-
-
-### After installing all requirements, to run in cmd:
-   ```sh
-   $ cd tutorial-2-image-classifier
-
-   $ python predict.py <imageInputFileName.extension>
-   ```
-
-### To run the WebApp:
+### Run web app:
    ```sh
    $ cd project\catvsdog
 
